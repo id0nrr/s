@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة شخصية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        /* تعيين الخلفية المتحركة */
+        body {
+            margin: 0;
+            height: 100vh;
+            background: url('https://media.discordapp.net/attachments/1301671456949669899/1403928305475784725/1adc406e5de4a2e47cacb242582e9bc3.gif?ex=6899559f&is=6898041f&hm=9e80d3cad7a1450b0257a0fa7d866eb912fc1bfcf3a4a92513044124c272bf35&=&width=550&height=253') no-repeat center center fixed;
+            background-size: cover; /* تغطي كامل الشاشة */
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* تنسيق البطاقة */
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 30px;
+            width: 420px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* تنسيق الصورة الشخصية */
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            background: url('https://media.discordapp.net/attachments/1301671456949669899/1403928305991946342/9bf902b3160d3a740da455c3ca4d3045.jpg?ex=6899559f&is=6898041f&hm=7114c94daa8abaa913ba138fbe406564fa166639de69293f8741b77876b41b0a&=&format=webp&width=1048&height=777') no-repeat center center/cover;
+            margin: 0 auto 20px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        h2 {
+            margin: 0 0 20px;
+        }
+
+        /* تنسيق الروابط */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .link img {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+            filter: brightness(0) invert(1); /* لوجو أبيض */
+        }
+
+        .link:hover {
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 0 10px white;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="avatar"></div>
+    <h2>حساباتي</h2>
+    <div class="links">
+        <a class="link" href="https://www.tiktok.com/@uyrrz" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046125.png" alt="TikTok"> @uyrrz
+        </a>
+        <a class="link" href="https://www.instagram.com/id1nr" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram"> @id1nr
+        </a>
+        <a class="link" href="https://www.snapchat.com/add/o1ne7" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" alt="Snapchat"> @o1ne7
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
